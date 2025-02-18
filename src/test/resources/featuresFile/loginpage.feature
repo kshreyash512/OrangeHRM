@@ -25,3 +25,9 @@ Feature: Login functionality
     When I click on login btn
     Then I should be able to validate Homepage Elements successfully
 
+
+  Scenario: Read credentials from excel
+    Given I read data from excel sheet
+    When I enter the credentials
+    Then I validate the login status
+
