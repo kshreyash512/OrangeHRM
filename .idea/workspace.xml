@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b306ec9c-c09d-44cb-9a3a-6abd4b72c76e" name="Changes" comment="" />
+    <list default="true" id="b306ec9c-c09d-44cb-9a3a-6abd4b72c76e" name="Changes" comment="Initial changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +17,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="0dad1c3c-90f8-4c84-a893-96af08aa8631" />
   </component>
@@ -24,35 +32,37 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2aRmiueSvondCnIyZz5QSazv0sx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LoginPageStepDf.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: loginpage.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successfully logging with valid credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Validating HomePage Elements.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Validation of Homepage Elements.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: login error with invalid credentials -  - Example n°2.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: login error with invalid credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SeleniumBDD [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SeleniumBDD [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SeleniumBDD [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SeleniumBDD [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.CucumberTestRunner (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CucumberTestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LoginPageStepDf.executor": "Run",
+    "Cucumber Java.Feature: loginpage.executor": "Run",
+    "Cucumber Java.Scenario: Successfully logging with valid credentials.executor": "Run",
+    "Cucumber Java.Scenario: Validating HomePage Elements.executor": "Run",
+    "Cucumber Java.Scenario: Validation of Homepage Elements.executor": "Run",
+    "Cucumber Java.Scenario: login error with invalid credentials -  - Example n°2.executor": "Run",
+    "Cucumber Java.Scenario: login error with invalid credentials.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.SeleniumBDD [clean,install].executor": "Run",
+    "Maven.SeleniumBDD [clean].executor": "Run",
+    "Maven.SeleniumBDD [install].executor": "Run",
+    "Maven.SeleniumBDD [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.CucumberTestRunner (1).executor": "Run",
+    "TestNG.CucumberTestRunner.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "application.passwordSafe"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install" />
@@ -172,6 +182,19 @@
       <option name="presentableId" value="Default" />
       <updated>1704289898541</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial changes">
+      <option name="closed" value="true" />
+      <created>1739809985840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739809985840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial changes" />
   </component>
 </project>

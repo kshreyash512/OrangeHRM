@@ -5,6 +5,8 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.example.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +14,10 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 
 public class LoginPageStepDf {
@@ -85,6 +91,36 @@ public class LoginPageStepDf {
 
     @Then("I should be able to validate Homepage Elements successfully")
     public void iShouldBeAbleToValidateHomepageElementsSuccessfully() {
+        loginPage.ValidateHomePageElements();
+    }
+
+    String userName;
+    String password;
+    @Given("I read data from excel sheet")
+    public void iReadDataFromExcelSheet() throws InterruptedException, IOException {
+        File src=new File("C:\\Users\\SHREYASH\\Downloads");
+
+        FileInputStream fi=new FileInputStream(src);
+        XSSFWorkbook workbook =new XSSFWorkbook(fi);
+        XSSFSheet sheet=workbook.getSheetAt(0);
+
+        userName=sheet.getRow(0).getCell(0).getStringCellValue();
+        password=sheet.getRow(0).getCell(1).getStringCellValue();
+
+    }
+
+    @When("I enter the credentials")
+    public void iEnterTheCredentials() throws InterruptedException {
+        loginPage.EnterUserName(userName);
+        Thread.sleep(2000);
+        loginPage.EnterPassword(password);
+        Thread.sleep(2000);
+    }
+
+    @Then("I validate the login status")
+    public void iValidateTheLoginStatus() throws InterruptedException {
+        loginPage.clickLoginBtn();
+        Thread.sleep(3000);
         loginPage.ValidateHomePageElements();
     }
 }
